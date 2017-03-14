@@ -1,0 +1,113 @@
+<html>
+<head>
+<title>Git Tutorials</title>
+<meta charset="UTF-8">
+<link rel = "stylesheet" type = "text/css" href = "main.css" />
+</head>
+<body>
+	<h1 class"headers" align="center" ><em>Welcome to Git-tutorials</em></h1>
+	<ul>
+		<li><a href="#topic1">How to install</a></li>
+		<li><a href="#topic2">How to configure</a></li>
+		<li><a href="#topic3">Various Operations</a></li>
+		<li><a href="#topic4">Git Commands</a></li>
+		<li><a href="#topic5">A Brief Explanation about Github</a></li>
+	</ul>
+
+
+	<div id="anim1"><img  src="git-tuto.jpeg" alt="image not found"></div>
+	<h2 class="headers">Lets Begin...</h2>
+<section class="paragraph1">
+<h2>At first "What is git???"</h2>
+<p ><br><br><br>
+Git is a version control system (VCS) for tracking changes in computer files and coordinating work on those files among multiple people. It is primarily used for software development, but it can be used to keep track of changes in any files. As a distributed revision control system it is aimed at speed, data integrity, and support for distributed, non-linear workflows.<br>
+Git was created by Linus Torvalds in 2005 for development of the Linux kernel, with other kernel developers contributing to its initial development. Its current maintainer is Junio Hamano.
+<br>
+As with most other distributed version control systems, and unlike most client–server systems, every Git directory on every computer is a full-fledged repository with complete history and full version tracking abilities, independent of network access or a central server.</p><br><br>
+
+<h2>How to Install Git</h2>
+<p id="topic1">
+By far the easiest way of getting git installed and ready to use is by using Ubuntu's default repositories. This is the fastest method, but the version may be older than the newest version. If you need the latest release, consider following the steps to compile git from source.
+
+You can use the apt package management tools to update your local package index. Afterwards, you can download and install the program:<br>
+<a href="git-install.png" target="_blank">click here to see demo</a>
+</p><br><br>
+</section>
+
+<section id="topic2">
+<h2>How to Configure</h2>
+<p >
+Now that you have git installed, you need to do a few things so that the commit messages that will be generated for you will contain your correct information.
+
+The easiest way of doing this is through the git config command. Specifically, we need to provide our name and email address because git embeds this information into each commit we do. We can go ahead and add this information by typing:<br>
+<a href="git-configure.png" target="_blank">clickhere to see demo</a>
+</p><br><br>
+</section>
+
+<section id="topic3">
+<h2>Various Features</h2>
+<p>
+<table border="3" CELLSPACING=4 CELLPADDING=4 color="purple">
+<tr>
+<th >Features</th>
+<th>Functions</th>
+</tr>
+<tr>
+<td>Command Line</td>
+<td>The computer program we use to input Git commands. On a Mac, it’s called Terminal. On a PC, it’s a non-native program that you download when you download Git for the first time (we’ll do that in the next section). In both cases, you type text-based commands, known as prompts, into the screen, instead of using a mouse.</td>
+</tr>
+<tr>
+<td>Repository</td>
+<td>A directory or storage space where your projects can live. Sometimes GitHub users shorten this to “repo.” It can be local to a folder on your computer, or it can be a storage space on GitHub or another online host. You can keep code files, text files, image files, you name it, inside a repository.</td>
+</tr>
+<tr>
+<td>Version Control</td>
+<td>Basically, the purpose Git was designed to serve. When you have a Microsoft Word file, you either overwrite every saved file with a new save, or you save multiple versions. With Git, you don’t have to. It keeps “snapshots” of every point in time in the project’s history, so you can never lose or overwrite it.</td>
+</tr>
+<tr>
+<td>Commit</td>
+<td>This is the command that gives Git its power. When you commit, you are taking a “snapshot” of your repository at that point in time, giving you a checkpoint to which you can reevaluate or restore your project to any previous state.</td>
+</tr>
+<tr>
+<td>Branch</td>
+<td>How do multiple people work on a project at the same time without Git getting them confused? Usually, they “branch off” of the main project with their own versions full of changes they themselves have made. After they’re done, it’s time to “merge” that branch back with the “master,” the main directory of the project.</td>
+</tr>
+</table>
+</p><br><br>
+</section>
+
+
+<section id="topic4">
+<h2>Git Commands</h2>
+<p >
+
+<ul >
+<li>git init:</li><br>Initializes a new Git repository. Until you run this command inside a repository or directory, it’s just a regular folder. Only after you input this does it accept further Git commands.<br><br>
+<li>git help:</li><br><br>Forgot a command? Type this into the command line to bring up the 21 most common git commands. You can also be more specific and type “git help init” or another term to figure out how to use and configure a specific git command.<br><br>
+<li>git status:</li><br><br>Check the status of your repository. See which files are inside it, which changes still need to be committed, and which branch of the repository you’re currently working on.<br><br>
+<li>git add:</li><br><br>This does not add new files to your repository. Instead, it brings new files to Git’s attention. After you add files, they’re included in Git’s “snapshots” of the repository.<br><br>
+<li>git commit:</li><br><br>Git’s most important command. After you make any sort of change, you input this in order to take a “snapshot” of the repository. Usually it goes git commit -m “Message here.” The -m indicates that the following section of the command should be read as a message.<br><br>
+<li>git branch:</li><br><br>Working with multiple collaborators and want to make changes on your own? This command will let you build a new branch, or timeline of commits, of changes and file additions that are completely your own. Your title goes after the command. If you wanted a new branch called “cats,” you’d type git branch cats.<br><br>
+<li>git checkout:</li><br><br>Literally allows you to “check out” a repository that you are not currently inside. This is a navigational command that lets you move to the repository you want to check. You can use this command as git checkout master to look at the master branch, or git checkout cats to look at another branch.<br><br>
+<li>git merge:</li><br><br>When you’re done working on a branch, you can merge your changes back to the master branch, which is visible to all collaborators. git merge cats would take all the changes you made to the “cats” branch and add them to the master.<br><br>
+<li>git push:</li><br><br>If you’re working on your local computer, and want your commits to be visible online on GitHub as well, you “push” the changes up to GitHub with this command.<br><br>
+<li>git pull:</li><br><br>If you’re working on your local computer and want the most up-to-date version of your repository to work with, you “pull” the changes down from GitHub with this command.<br><br>
+</ul>
+
+</p><br><br>
+</section>
+
+<section id="topic5">
+<h2>A Brief Explanation about Github</h2>
+<p>GitHub is a web-based Git repository hosting service. It offers all of the distributed version control and source code management (SCM) functionality of Git as well as adding its own features. It provides access control and several collaboration features such as bug tracking, feature requests, task management, and wikis for every project.</p>
+</p>
+GitHub offers both plans for private repositories, and free accounts which are commonly used to host open-source software projects. As of April 2016, GitHub reports having more than 14 million users and more than 35 million repositories, making it the largest host of source code in the world.</p>
+<br><br>
+</section>
+<h2>To go to related links:</h2>
+
+
+
+</body>
+
+</html>
